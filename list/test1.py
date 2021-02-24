@@ -48,3 +48,17 @@ fruits2.popleft()
 print("pop left1 (mahdi) : ", fruits2)
 fruits2.popleft()
 print("pop left1 (True) : ", fruits2)
+
+print("[-1]: ",fruits2[-1])
+
+a=[1,2,3,5,1,2,3,5,5,3,3,2,54]
+print("a :",a)
+print("[2::5]",a[2::3])
+
+squares=[]
+#pow
+squares = [x**2 for x in range(10)]
+print("squares : ",squares)
+
+print([(x, y) for x in [1,2,3] for y in [3,1,4] if x == y])
+print([(x, y) for x in [1,2,3] for y in [3,1,4] if x != y])
