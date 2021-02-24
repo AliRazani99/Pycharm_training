@@ -1,4 +1,7 @@
 #just for practice
+
+from collections import deque
+
 my_list=["mahdi" , "sara" , "lia" , "reza" ]
 print("my list is: " , my_list)
 print(len(my_list))
@@ -17,7 +20,7 @@ last_list=["mahdi",[1,2,3,4,"mahdi"],True,['a']]
 print(last_list[1][2])
 
 #fruits:)
-fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+fruits = ['orange','pear', 'banana', 'kiwi', 'apple', 'banana']
 print("fruits :",fruits)
 print("apple count :",fruits.count('apple'))
 
@@ -36,3 +39,12 @@ print(fruits)
 
 print("pop :",fruits.pop())
 print(fruits)
+
+fruits2 = deque(["eric","mahdi", True , False , 2 , "sara","omid",False,True,2,"askari"])
+print("fruits2 : ",fruits2)
+fruits2.popleft()
+print("pop left1 (eric) : ", fruits2)
+fruits2.popleft()
+print("pop left1 (mahdi) : ", fruits2)
+fruits2.popleft()
+print("pop left1 (True) : ", fruits2)
