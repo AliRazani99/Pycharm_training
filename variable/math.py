@@ -17,17 +17,6 @@ def math_func( first_num,second_num):
     sum=float(cos)+float(sin)+float(tan)
     print("the sum of {0} and {1} and {2} is {3}".format(sin,cos,tan,sum))
 
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     first_num=int(input("inter your first number :"))
     second_num= int(input("inter your second number :"))
