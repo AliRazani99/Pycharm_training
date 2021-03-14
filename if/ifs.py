@@ -1,0 +1,23 @@
+# Example file for working with conditional statement
+def main():
+    x, y = 2, 8
+
+    if (x < y):
+        st = "x is less than y"
+    print(st)
+
+# Example file for working with conditional statement
+def main2():
+    x, y = 8, 8
+
+    if (x < y):
+        st = "x is less than y"
+    elif(x==y):
+        st = "x is greater than y"
+    print(st)
+
+
+if __name__ == "__main__":
+    main()
+    main2()
+

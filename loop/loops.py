@@ -84,3 +84,10 @@ while count<10:
     count+=1
 else:
     print("Finished while")
+
+print("\nDictionary Iteration")
+d = dict()
+d['xyz'] = 123
+d['abc'] = 345
+for i in d :
+    print("%s  %d" %(i,d[i]))

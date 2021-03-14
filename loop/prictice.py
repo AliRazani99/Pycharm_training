@@ -29,6 +29,7 @@ for number in numbers:
         continue
 
     print(number)
+
 print("iter...............")
 for y in iter(numbers):
     print(y)
