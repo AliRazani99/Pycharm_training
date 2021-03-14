@@ -35,3 +35,45 @@ for x in range(5):
 else:
     print("Finished")
 
+for x in range(6):
+    if x == 3:
+        break
+    print(x)
+else:
+    print("Finished")
+
+#Nested Loops
+adj=['good','nice','delicious']
+fruites=['banana','apple']
+for x in adj:
+    for y in fruites:
+        print(x)
+        print(y)
+print("Changing.......")
+adj=['good','nice','delicious']
+fruites=['banana','apple']
+for x in adj:
+    for y in fruites:
+        print(x)
+    print(y)
+
+print("Changing2.......")
+adj=['good','nice','delicious']
+fruites=['banana','apple']
+for x in adj:
+    print(x)
+    for y in fruites:
+        print(y)
+
+print("Changing3.......")
+adj=['good','nice','delicious']
+fruites=['banana','apple']
+for x in adj:
+    for y in fruites:
+        print(x,y)
+
+#loop with pass
+#for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+for x in [1,2,3]:
+    pass
+
