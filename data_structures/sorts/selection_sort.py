@@ -3,8 +3,8 @@ class Search:
     def get_data(self):
         x = 0
         my_array = []
-
-        while (x < 5):
+        count=int(input("How many numbers do you wanna add?"))
+        while (x < count):
             number = int(input("please inter your number:"))
             my_array.append(number)
             x += 1
