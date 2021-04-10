@@ -1,5 +1,5 @@
 class Sort:
-    # just for get 5 number from input
+    #constructor
     def __init__(self, array):
         self.array = array
 
