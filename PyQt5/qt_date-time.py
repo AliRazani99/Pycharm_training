@@ -29,5 +29,8 @@ def my_time():
     print(date.toString(Qt.DefaultLocaleShortDate))
 
 
+
+
+
 if __name__ == '__main__':
     my_time()
