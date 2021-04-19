@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication,QMainWindow,QPushButton,QToolTip
+from PyQt5.QtWidgets import QApplication,QMainWindow,QPushButton,QMessageBox
 from PyQt5 import QtGui
 import sys
 from PyQt5.QtCore import QCoreApplication
@@ -25,10 +25,22 @@ class Window(QMainWindow):
         self.show()
 #for create a button
     def set_button(self):
-        button = QPushButton("Close", self)
-        button.move(200,300)
-        button.setToolTip("just for exit")
-        button.clicked.connect(self.close)
+        first_button = QPushButton("Close", self)
+        first_button.move(200,300)
+        first_button.setToolTip("just for exit")
+        first_button.clicked.connect(self.close)
+
+        second_button=QPushButton("Asking for close",self)
+        second_button.move(200, 200)
+        second_button.setToolTip("just for asking exit")
+        second_button.clicked.connect(self.closeApp)
+
+
+
+    def closeApp(self):
+        reply = QMessageBox.question(self,"Close Message","Are you sure?",QMessageBox.Yes |QMessageBox.No,QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            self.close()
 
 #for close program
     def close(self):
