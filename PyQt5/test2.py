@@ -10,8 +10,7 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         MainWindow.setFocusPolicy(QtCore.Qt.NoFocus)
-        MainWindow.setStyleSheet("\n"
-"")
+        MainWindow.setStyleSheet("\n""")
         MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
